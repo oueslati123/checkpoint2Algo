@@ -1,0 +1,25 @@
+vector{
+    x:int,
+    y:int,
+
+}
+function dot_product (v1,v2:vector){
+    ps = v1.x * v2.x + v1.y * v2.y
+
+}
+
+pairsVector{
+    v1:vector,
+    v2:vector,
+}
+
+function check_orthogonal (pv:array[pairsVector],n:int){
+    for (let i=0; i<n-1; i++){
+        ps =function dot_product(pv[i].v1,pv[i].v2);
+        if (ps = 0) then 
+        ecrire ("les vecteurs sont orthogonaux")
+        else 
+        ecrire ("les vecteurs ne sont pas orthogonaux")
+
+    }
+}
